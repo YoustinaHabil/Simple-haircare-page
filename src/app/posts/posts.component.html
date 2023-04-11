@@ -1,0 +1,28 @@
+<p>posts works!</p>
+<div *ngFor="let post of posts"(click)="goToPostsDetails(post)"[class.selected]="SelectedId==post.ID" >
+    {{post.ID}} {{post.Title}}
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Title</th>
+                        <th>Body</th>
+                       
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let mypro of posts">
+                        <td>{{mypro.ID}}</td>
+                        <td>{{mypro.Title}}</td>
+                        <td>{{mypro.Body}}</td>
+                        
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

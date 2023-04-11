@@ -1,0 +1,45 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Product Id</th>
+                        <th>Product Name</th>
+                        <th>Product Quantity</th>
+                        <th>Product Price</th>
+                        <th>Product Image</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let mypro of products">
+                        <td>{{mypro.Id}}</td>
+                        <td>{{mypro.name}}</td>
+                        <td>{{mypro.Quantity}}</td>
+                        <td>{{mypro.price}}</td>
+                        <td><img src="{{mypro.image}}" width="140" height="90"
+                            alt=""></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+<!---<input type="button" value="SelectProduct"(click)="HideShow()"/>
+
+
+   <button  class="dropbtn">Dropdown</button>
+    <div  *ngFor="let category of Categories"
+        {{category}} class="dropdown"> id="myDropdown" class="dropdown-content">
+
+    </div>-->
+
+  
+ 
+
+
+
+
+

@@ -1,0 +1,30 @@
+<h1 style="color: blueviolet;background-color: bisque;">Store Name: 
+    {{StoreName}}</h1>
+<h2>Store Logo:
+    <img [src]="StoreLogo" style="width: 300px; height: 300px;">
+</h2>
+
+<h3 *ngIf="DisplayNoDiscount else elseBlock">
+    {{"we offer an explicit Discount of:"+Discount}}</h3>
+
+
+<ng-template #elseBlock>
+
+</ng-template>
+<h2 style="color:blue;background-color: skyblue;text-align: center;margin: auto;">pipes</h2>
+{{storeName}}
+<br>
+{{storeName |lowercase}}
+<br>
+{{storeName |uppercase}}
+<br>
+{{0.10 |percent}}
+<br>
+{{0.15 |percent}}
+<br>
+{{parentData}}
+<br>
+<div *ngFor="let product of Products">
+    {{product}}
+</div>
+<button style="color: rgb(54, 123, 91);background-color: antiquewhite;" (click)="sendDataToParent()">Show More About Curly Hair</button>

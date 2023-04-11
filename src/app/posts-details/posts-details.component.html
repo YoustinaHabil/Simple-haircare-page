@@ -1,0 +1,16 @@
+<p>posts-details works!</p>
+<h2>You Select Posts With Id={{PostId}}</h2>
+
+<button  (click)="goNext()">Go Next</button>
+<br><br>
+
+<button (click)="goPrevious()">Go Previous</button>
+<br><br>
+
+<button (click) ="goBack()" >Go Back</button>
+<br><br>
+<button (click)="WithDiscount()">Products With Discount</button>
+<br><br>
+
+<button (click)="WithOutDiscount()">Products WithOut Discount</button>
+<router-outlet></router-outlet>

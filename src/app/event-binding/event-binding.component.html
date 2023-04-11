@@ -1,0 +1,21 @@
+<h2 style="color: rgb(22, 144, 103);">Kindly Please Enter Your Name</h2>
+<input type="text" [(ngModel)]="ClientName"/>
+{{ClientName}}
+<br><br>
+<button (click)="onclick()" type="button"class="btn btn-danger">{{Buy?"Buy More":"No Thanks"}}
+</button>
+
+<ng-container *ngIf="visible">        
+
+    <div class="bg-white shadow-sm p-3">
+        <h2 style="color: rgb(172, 58, 96);background-color: rgb(154, 189, 235);">{{"Thanks for purchasing from our Store" + ClientName}} </h2>
+    <h4 style="color: rgb(195, 75, 115);background-color: rgb(246, 247, 188);">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Voluptatem modi consectetur quam, recusandae ipsa deserunt
+         sapiente qui laboriosam aspernatur sed non maxime debitis
+          laudantium cum necessitatibus,
+         aut quisquam. Sunt, isteVoluptatem modi consectetur quam, recusandae ipsa deserunt
+         sapiente qui laboriosam aspernatur sed non maxime debitis
+          laudantium cum necessitatibus,
+         aut quisquam. Sunt, iste..</h4>
+    </div>
+</ng-container>
